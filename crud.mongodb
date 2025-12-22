@@ -61,3 +61,12 @@ db.studentDetails.deleteOne({
   _id: ObjectId("69495b242aa132e26c4275c0")
 });
 db.studentDetails.find()
+
+
+db.studentDetails.find()
+
+db.studentDetails.updateOne({ name:"Mr N"}, 
+  { $set: { name: "Nitya"}}
+)
+
+db.studentDetails.find()
