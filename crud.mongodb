@@ -1,0 +1,63 @@
+use("student");
+
+db.studentDetails.find({});
+
+
+db.studentDetails.countDocuments()
+
+
+
+use("student");
+
+db.studentDetails.insertOne({
+  name: "Mr N",
+  age: 22,
+  rollNo: 119,
+  skills: ["JavaScript", "React.js", "Tailwind"]
+});
+
+
+db.studentDetails.find()
+
+db.studentDetails.deleteOne({ _id:ObjectId("69483bcf61dd7f1d0046e5d3")});
+
+db.studentDetails.find()
+
+use("student");
+
+db.studentDetails.deleteOne({
+  _id: ObjectId("69483d509ec4747d23b9d2ff")
+});
+
+db.studentDetails.deleteOne({
+  _id: ObjectId("69483d6d47f505565bd1f4ca")
+});
+
+use("student")
+
+use ("student")
+db.studentDetails.find()
+
+db.studentDetails.countDocuments()
+db.studentDetails.find()
+
+use("amzonStore");
+
+db.amzonStore.find()
+
+use("amzonStore");
+
+db.getCollectionNames();
+db.amzonStore.find();
+use("student");
+db.getCollectionNames();
+db.studentDetails.find()
+
+db.studentDetails.find()
+db.studentDetails.deleteOne({ name: "Mr N" })
+db.studentDetails.find()
+
+db.studentDetails.deleteOne({
+  _id: ObjectId("69495b242aa132e26c4275c0")
+});
+db.studentDetails.find()
