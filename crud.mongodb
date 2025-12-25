@@ -84,3 +84,9 @@ db.studentDetails.updateOne({name:"Neha Singh"}, {$set: {sex:"Female"}})
 db.studentDetails.find()
 
 // Now Go For Adavance...
+
+db.studentDetails.find({name:"Neha Singh"})
+
+db.studentDetails.find()
+
+db.studentDetails.countDocuments()
