@@ -90,3 +90,10 @@ db.studentDetails.find({name:"Neha Singh"})
 db.studentDetails.find()
 
 db.studentDetails.countDocuments()
+
+
+db.studentDetails.find({name:"Tejasvi Rajput"})
+
+db.studentDetails.updateOne( {name:"Tejasvi Rajput"} , { $set: {State:"Bihar"}})
+
+db.studentDetails.find({name: "Tejasvi Rajput"})
