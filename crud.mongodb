@@ -97,3 +97,55 @@ db.studentDetails.find({name:"Tejasvi Rajput"})
 db.studentDetails.updateOne( {name:"Tejasvi Rajput"} , { $set: {State:"Bihar"}})
 
 db.studentDetails.find({name: "Tejasvi Rajput"})
+
+
+
+db.studentDetails.deleteOne({name:"Neha Singh"}, {$set: {name : "Neha Rajput"}})
+
+db.studentDetails.find({name:"Neha Rajput"})
+
+db.studentDetails.find()
+
+db.studentDetails.updateMany(
+  { name: "Neha Singh", rollNo: 43 },
+  {
+    $set: {
+      Status: "Adult",
+      Nationality: "Indian"
+    }
+  }
+)
+db.studentDetails.find()
+
+db.studentDetails.insertOne({name:"Neha Rajput"})
+
+db.studentDetails.updateMany(
+  { name: "Neha Rajput" },
+  {
+    $set: {
+      age: 21,
+      Status: "Adult"
+    }
+  }
+)
+db.studentDetails.find()
+
+db.studentDetails.find({name:"Neha Rajput"})
+ 
+//  i have to delete Duplicate Name of Data ...
+
+db.studentDetails.deleteMany({ name: "Neha Rajput" })
+
+db.studentDetails.insertOne({
+  name: "Neha Rajput",
+  rollNo: 43,
+  age: 21,
+  Status: "Adult",
+  Nationality: "Indian"
+})
+
+db.studentDetails.find()
+
+db.studentDetails.countDocuments()
+
+db.studentDetails.find().sort({name:1})
