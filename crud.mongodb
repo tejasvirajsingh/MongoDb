@@ -148,4 +148,10 @@ db.studentDetails.find()
 
 db.studentDetails.countDocuments()
 
+
+// For sort by Name 
+
+
 db.studentDetails.find().sort({name:1})
+
+db.studentDetails.find()
