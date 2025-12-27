@@ -51,3 +51,46 @@ db.customers.find()
 db.customers.deleteOne({_id: ObjectId("695023faeef24a19cb12ad25")})
 
 db.customers.find()
+
+// fix the duplicate id
+
+db.customers.deleteMany({ name: "Harsh Rajput" })
+db.customers.updateOne(
+  { customerId: "CUST1002" },
+  {
+    $set: {
+      name: "Harsh Rajput",
+      email: "harsh@gmail.com",
+      isActive: true
+    }
+  },
+  { upsert: true }
+)
+db.customers.find()
+
+// Insert the new name id of Customer with customerid
+
+db.customers.insertOne({
+    name:"Mr Max",
+    customerId: "CUST1003"
+})
+
+db.customers.find()
+
+db.customers.countDocuments()
+db.customers.find()
+
+db.customers.deleteMany({
+    name:"Mr Max"
+
+})
+
+db.customers.insertOne({
+    name:"Mr Max",
+    roll:1
+})
+
+db.customers.countDocuments()
+db.customers.find()
+
+db.customers.countDocuments()
