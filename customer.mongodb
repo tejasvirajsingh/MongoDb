@@ -1,0 +1,53 @@
+db.customers.insertOne({
+  customerId: "CUST1001",
+  name: "Neha Rajput",
+  email: "neha@gmail.com",
+  mobile: "9876543210",
+  gender: "Female",
+  city: "Indore",
+  createdAt: new Date(),
+  isActive: true
+})
+
+db.customers.find()
+
+// For removed Duplicate Id of Customers 
+
+db.customers.updateOne(
+  { customerId: "CUST1001" },
+  {
+    $set: {
+      name: "Neha Rajput",
+      email: "neha@gmail.com",
+      mobile: "9876543210",
+      gender: "Female",
+      city: "Indore",
+      isActive: true,
+      updatedAt: new Date()
+    }
+  },
+  { upsert: true }
+)
+ 
+
+db.customers.find()
+
+db.customers.insertOne({name:"Harsh Rajput"})
+
+db.customers.deleteMany({name:"Neha Rajput"})
+db.customers.insertOne({
+    name:"Neha Rajput",
+    email: "neha@gmail.com",
+      mobile: "9876543210",
+      gender: "Female",
+      city: "Indore",
+      isActive: true,
+
+
+})
+
+db.customers.find()
+
+db.customers.deleteOne({_id: ObjectId("695023faeef24a19cb12ad25")})
+
+db.customers.find()
