@@ -106,3 +106,4 @@ db.customers.updateOne({name:"Mr Max"}, {$set:{
 }})
 
 db.customers.find()
+

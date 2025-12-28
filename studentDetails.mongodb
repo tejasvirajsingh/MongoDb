@@ -155,3 +155,21 @@ db.studentDetails.countDocuments()
 db.studentDetails.find().sort({name:1})
 
 db.studentDetails.find()
+
+
+db.studentDetails.countDocuments()
+
+db.studentDetails.find()
+
+// sort by age 
+
+db.studentDetails.find().sort({age:1})
+
+// i have to increase the age of student ... 
+
+db.studentDetails.updateMany({},
+  { $inc: {age:1}}
+)
+
+db.studentDetails.find()
+
