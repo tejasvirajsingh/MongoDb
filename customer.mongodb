@@ -94,3 +94,15 @@ db.customers.countDocuments()
 db.customers.find()
 
 db.customers.countDocuments()
+
+db.customers.find()
+
+db.customers.updateOne({name:"Mr Max"}, {$set:{
+  mobile: 7895228385,
+  email: "mrmaxji@gmail.com",
+  gender: "Male",
+  city: "Bikaramganj", 
+  isActive: true
+}})
+
+db.customers.find()
