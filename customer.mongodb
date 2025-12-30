@@ -107,3 +107,45 @@ db.customers.updateOne({name:"Mr Max"}, {$set:{
 
 db.customers.find()
 
+db.customers.countDocuments()
+
+db.customers.insertOne({name:"Nirajala Singh",
+  Mobile: "98**********7",
+  email:"nir******@gmail.com",
+  gender:"Female", 
+  city:"Natwar", 
+  Profession:"Teacher",
+  Empy_id:45
+})
+
+db.customers.find()
+
+db.customers.insertOne({name:"Nirajala Singh",
+  Mobile: "98**********7",
+  email:"nir******@gmail.com",
+  gender:"Female", 
+  city:"Natwar", 
+  Profession:"Teacher",
+  Empy_id:4
+})
+
+db.customers.countDocuments()
+
+db.customers.deleteMany({
+ name:"Nirajala Singh"
+ 
+
+})
+
+db.customers.insertOne({name:"Nirajala Singh",
+  Mobile: "98**********7",
+  email:"nir******@gmail.com",
+  gender:"Female", 
+  city:"Natwar", 
+  Profession:"Teacher",
+  Empy_id:45
+})
+
+db.customers.countDocuments()
+
+db.customers.find()
