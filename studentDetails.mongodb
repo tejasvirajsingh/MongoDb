@@ -173,3 +173,15 @@ db.studentDetails.updateMany({},
 
 db.studentDetails.find()
 
+db.studentDetails.countDocuments()
+
+db.studentDetails.deleteOne({name:"Harsh Rajput"})
+
+db.studentDetails.find()
+
+
+// Rani Details I delete from database...
+
+db.studentDetails.deleteOne({name:"Rani Sharma"})
+
+db.studentDetails.countDocuments()
