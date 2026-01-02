@@ -185,3 +185,6 @@ db.studentDetails.find()
 db.studentDetails.deleteOne({name:"Rani Sharma"})
 
 db.studentDetails.countDocuments()
+
+db.studentDetails.find()
+
