@@ -188,3 +188,8 @@ db.studentDetails.countDocuments()
 
 db.studentDetails.find()
 
+db.studentDetails.find({name:"Harsh Rajput"})
+
+db.studentDetails.find()
+
+db.studentDetails.find({name: "Tejasvi Rajput"})
