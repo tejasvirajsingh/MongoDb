@@ -149,3 +149,10 @@ db.customers.insertOne({name:"Nirajala Singh",
 db.customers.countDocuments()
 
 db.customers.find()
+
+db.customers.insertOne({name:"Rajput", age:23, rollNo: 3})
+
+db.customers.countDocuments()
+
+db.customers.find()
+
