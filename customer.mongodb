@@ -156,3 +156,8 @@ db.customers.countDocuments()
 
 db.customers.find()
 
+db.customers.find()
+
+db.customers.deleteMany({name:"Rajput"})
+
+db.customers.find()
